@@ -215,7 +215,7 @@ class OLSFixed(object):
                            [tstat[i] for i in exog_len],
                            [prob_stat[i]],
                            [conf_int[0][i]],
-                           [conf_int[1][i])
+                           [conf_int[1][i]])
 
         self.parameter_table = SimpleTable(params_data,
                                            param_header,
