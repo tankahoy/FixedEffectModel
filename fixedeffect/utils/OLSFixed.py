@@ -210,7 +210,7 @@ class OLSFixed(object):
             prob_stat[i] = forg(self.pvalues[i], 4)
 
         # Simpletable should be able to handle the formating
-        params_data = lzip([(params[i]) for i in exog_len],
+        params_data = lzip([params[i] for i in exog_len],
                            [std_err[i] for i in exog_len],
                            [tstat[i] for i in exog_len],
                            [prob_stat[i]],
